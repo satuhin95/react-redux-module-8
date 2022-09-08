@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { useGetTodosQuery } from '../../features/todo/todoSlice'
-import Footer from '../Footer';
 import Header from '../Header';
 import Todo from './Todo'
 
@@ -21,15 +20,7 @@ export default function Todos() {
     const [color,setColor] = useState('');
     const [status, setStatus] = useState('');
 
-    // const filterByComplateed = (todo) => {
-    //     return todo.completed;
-    // };
-    // const filterByIncomplateed = (todo) => {
-    //     return !todo.completed;
-    // };
-    // const filterByStatus = (todo) => {
-    //     return todo.completed ;
-    // };
+
     const filterByStatus = (todo) => {
         switch (status) {
             case "Complete":
